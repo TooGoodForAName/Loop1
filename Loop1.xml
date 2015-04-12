@@ -82,6 +82,7 @@
                                         </value>
                                         <next>
                                           <block type="controls_if" id="652" inline="false">
+                                            <mutation elseif="1"></mutation>
                                             <value name="IF0">
                                               <block type="logic_compare" id="653" inline="true">
                                                 <field name="OP">GT</field>
@@ -112,6 +113,40 @@
                                                 <next>
                                                   <block type="oled_drawtext" id="709">
                                                     <field name="TEXT">Found Water!</field>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </statement>
+                                            <value name="IF1">
+                                              <block type="logic_compare" id="725" inline="true">
+                                                <field name="OP">LT</field>
+                                                <value name="A">
+                                                  <block type="sensor_spectrometer" id="726">
+                                                    <field name="LIGHT">GREEN</field>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <block type="math_number" id="727">
+                                                    <field name="NUM">94</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO1">
+                                              <block type="oled_setcursor" id="728" inline="true">
+                                                <value name="STARTX">
+                                                  <block type="math_number" id="729">
+                                                    <field name="NUM">37</field>
+                                                  </block>
+                                                </value>
+                                                <value name="STARTY">
+                                                  <block type="math_number" id="730">
+                                                    <field name="NUM">10</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="oled_drawtext" id="731">
+                                                    <field name="TEXT">Mars Rock</field>
                                                   </block>
                                                 </next>
                                               </block>
