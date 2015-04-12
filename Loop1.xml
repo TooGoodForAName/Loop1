@@ -74,7 +74,9 @@
                                 <next>
                                   <block type="oled_drawnumber" id="329" inline="true">
                                     <value name="NUMBER">
-                                      <block type="math_random" id="393"></block>
+                                      <block type="sensor_spectrometer" id="514">
+                                        <field name="LIGHT">GREEN</field>
+                                      </block>
                                     </value>
                                     <next>
                                       <block type="controls_if" id="9" inline="false">
