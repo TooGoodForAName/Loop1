@@ -1,11 +1,11 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="robot_delay" id="254" inline="true" x="62" y="9">
-    <value name="DELAY">
+  <block type="controls_if" id="305" inline="false" x="-167" y="-213">
+    <value name="IF0">
       <block type="sensor_button" id="268">
         <field name="OBJECT">ENTER</field>
       </block>
     </value>
-    <next>
+    <statement name="DO0">
       <block type="controls_whileUntil" id="1" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
@@ -189,6 +189,6 @@
           </block>
         </statement>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
