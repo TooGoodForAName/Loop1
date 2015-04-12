@@ -107,7 +107,11 @@
                                           </block>
                                         </value>
                                         <next>
-                                          <block type="oled_cleardisplay" id="20"></block>
+                                          <block type="oled_cleardisplay" id="20">
+                                            <next>
+                                              <block type="movement_stop" id="21"></block>
+                                            </next>
+                                          </block>
                                         </next>
                                       </block>
                                     </next>
@@ -159,9 +163,6 @@
                                             <field name="NUM">50</field>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="movement_stop" id="21"></block>
-                                        </next>
                                       </block>
                                     </next>
                                   </block>
