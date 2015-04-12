@@ -99,7 +99,23 @@
                                                   <block type="math_random" id="622"></block>
                                                 </value>
                                                 <value name="B">
-                                                  <block type="math_random" id="632"></block>
+                                                  <block type="math_bitwise" id="635" inline="true">
+                                                    <field name="OP">OR</field>
+                                                    <value name="A">
+                                                      <block type="math_random" id="634"></block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <block type="math_bitwise" id="633" inline="true">
+                                                        <field name="OP">OR</field>
+                                                        <value name="A">
+                                                          <block type="math_random" id="636"></block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <block type="math_random" id="632"></block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
                                                 </value>
                                               </block>
                                             </value>
